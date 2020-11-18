@@ -334,7 +334,7 @@ static int remove_cpus(struct dr_info *dr_info)
  */
 static int smt_threads_func(struct dr_info *dr_info)
 {
-	int rc;
+	int rc = 0;
 	struct dr_node *cpu;
 
 	if (usr_drc_count != 1) {
